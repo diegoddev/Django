@@ -3,9 +3,9 @@ from proyectocoder.views import *
 from appcoder.views import *
 
 urlpatterns = [
-    path("", inicio),
-    path("cursos/", cursos),
-    path("estudiantes/", estudiantes),
-    path("profesores/", profesores),
-    path("entregables/", entregables)
+    path("inicio/", inicio, name = "coder-inicio"),
+    path("cursos/", cursos, name = "coder-cursos"),
+    path("estudiantes/", estudiantes, name = "coder-estudiantes"),
+    path("profesores/", profesores, name = "coder-profesores"),
+    path("entregables/", entregables, name = "coder-entregables")
 ]
